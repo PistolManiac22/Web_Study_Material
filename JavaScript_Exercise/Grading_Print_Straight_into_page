@@ -1,3 +1,5 @@
+    <h1 id="result"></h1>
+    <script>
       let score = 85;
       let hasil;
 
@@ -14,3 +16,4 @@
       }
 
     document.getElementById("result").innerHTML = "Nilai anda : " + score + " " + hasil;
+      </script>
