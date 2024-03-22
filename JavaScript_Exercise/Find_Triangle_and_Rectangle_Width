@@ -1,0 +1,8 @@
+      let alasSegitiga = 5;
+      let tinggiSegitiga = 8;
+      let luasSegitiga = 0.5 * alasSegitiga * tinggiSegitiga;
+      alert("Luas segitiga: " + luasSegitiga);
+
+      let sisiPersegi = 4;
+      let luasPersegi = sisiPersegi * sisiPersegi;
+      alert("Luas persegi: " + luasPersegi);
