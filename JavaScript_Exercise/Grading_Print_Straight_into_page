@@ -1,0 +1,16 @@
+      let score = 85;
+      let hasil;
+
+      if (score >= 90) {
+      hasil = 'Selamat! Anda mendapatkan nilai A.';
+      } else if (score >= 80 && score <= 89) {
+      hasil = 'Anda mendapatkan nilai B.';
+      } else if (score >= 70 && score <= 79) {
+      hasil = 'Anda mendapatkan nilai C.';
+      } else if (score >= 60 && score <= 69) {
+      hasil = 'Anda mendapatkan nilai D.';
+      } else {
+      hasil = 'Anda mendapatkan nilai E.';
+      }
+
+    document.getElementById("result").innerHTML = "Nilai anda : " + score + " " + hasil;
