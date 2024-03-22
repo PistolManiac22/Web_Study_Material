@@ -1,0 +1,37 @@
+    <h1 id="result"></h1>
+    <script>
+      function isPrime(num) {
+        if (num <= 1) {
+          return false;
+        }
+        if (num === 2) {
+          return true;
+        }
+        for (let i = 2; i <= num / 2; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      let userInput = parseInt(prompt("Enter a number:"));
+      if (isNaN(userInput)) {
+        alert("Please enter a valid number.");
+      } else {
+        let result;
+        if (isPrime(userInput)) {
+          result = userInput + " adalah bilangan prima";
+          if (userInput % 2 === 0) {
+            result += " genap";
+          } else {
+            result += " ganjil";
+          }
+        } else if (userInput % 2 === 0) {
+          result = userInput + " adalah bilangan genap";
+        } else {
+          result = userInput + " adalah bilangan ganjil";
+        }
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
